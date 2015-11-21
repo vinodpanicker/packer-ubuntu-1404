@@ -41,7 +41,3 @@ If you want to only build a box for one of the supported virtualization platform
 ## License
 
 MIT license.
-
-## Author Information
-
-Created in 2014 by [Jeff Geerling](http://jeffgeerling.com/), author of [Ansible for DevOps](http://ansiblefordevops.com/).

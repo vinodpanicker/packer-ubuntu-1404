@@ -4,8 +4,8 @@
   gather_facts: yes
 
   roles:
-    - geerlingguy.nfs
-    - geerlingguy.packer-debian
+    - vpanicke.nfs
+    - vpanicke.packer-debian
 
   tasks:
     - apt: "name={{ item }} state=installed"
