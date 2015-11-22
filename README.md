@@ -5,7 +5,7 @@
 This example build configuration installs and configures Ubuntu 14.04 x86_64 minimal using Ansible, and then generates two Vagrant box files, for:
 
   - VirtualBox
-  - VMware
+
 
 The example can be modified to use more Ansible roles, plays, and included playbooks to fully configure (or partially) configure a box file suitable for deployment for development environments.
 
@@ -16,7 +16,6 @@ The following software must be installed/present on your local machine before yo
   - [Packer](http://www.packer.io/)
   - [Vagrant](http://vagrantup.com/)
   - [VirtualBox](https://www.virtualbox.org/) (if you want to build the VirtualBox box)
-  - [VMware Fusion](http://www.vmware.com/products/fusion/) (or Workstation - if you want to build the VMware box)
   - [Ansible](http://docs.ansible.com/intro_installation.html)
 
 You will also need some Ansible roles installed so they can be used in the building of the VM. To install the roles:

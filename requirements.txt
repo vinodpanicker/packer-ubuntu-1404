@@ -1,2 +1,2 @@
-geerlingguy.packer-debian
-geerlingguy.nfs
+vpanicke.packer-debian
+vpanicke.nfs
