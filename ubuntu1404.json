@@ -27,6 +27,7 @@
   "builders": [
     {
       "type": "virtualbox-iso",
+      "name": "headless-virtualbox-iso",
       "boot_command": [
         "<esc><wait>",
         "<esc><wait>",
@@ -75,6 +76,7 @@
     },
     {
     "type": "virtualbox-iso",
+    "name": "desktop-virtualbox-iso",
     "boot_command": [
       "<esc><wait>",
       "<esc><wait>",
@@ -126,6 +128,16 @@
     {
       "output": "builds/{{.Provider}}-ubuntu1404.box",
       "type": "vagrant"
+    },
+    {
+      "type": "atlas",
+      "only": ["virtualbox-iso"],
+      "artifact": "vpanicke/oveubuntu1404",
+      "artifact_type": "vagrant.box",
+      "metadata": {
+        "provider": "virtualbox",
+        "version": "0.0.1"
+      }
     }
   ]
 }
