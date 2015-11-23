@@ -134,7 +134,7 @@
       "type": "atlas",
       "artifact": "vpanicke/oveubuntu1404",
       "artifact_type": "vagrant.box",
-      "only": ["virtualbox-iso"],
+      "only": ["desktop-virtualbox-iso"],
       "metadata": {
         "created_at": "{{timestamp}}",
         "version": "{{user `version`}}",
