@@ -126,6 +126,7 @@
   ],
   "post-processors": [
     {
+      "compression_level": 9,
       "output": "builds/{{.Provider}}-ubuntu1404.box",
       "type": "vagrant"
     },
@@ -133,9 +134,11 @@
       "type": "atlas",
       "artifact": "vpanicke/oveubuntu1404",
       "artifact_type": "vagrant.box",
+      "only": ["virtualbox-iso"],
       "metadata": {
-        "provider": "virtualbox",
-        "version": "0.0.1"
+        "created_at": "{{timestamp}}",
+        "version": "{{user `version`}}",
+        "provider": "virtualbox"
       }
     }
   ]
